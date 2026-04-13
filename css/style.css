@@ -1,0 +1,368 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height: 100vh;
+}
+
+.dashboard-container{
+    width:400px;
+    margin:100px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.dashboard-container h2{
+    margin-bottom:20px;
+    color:#1e3c72;
+}
+
+.dashboard-container p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.menu a{
+    display:block;
+    padding:10px;
+    margin:8px 0;
+    background:#1e3c72;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background:#16325c;
+    transform: scale(1.02);
+}
+
+.logout{
+    background:#c0392b !important;
+}
+
+.table-container{
+    width:80%;
+    margin:80px auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.attendance-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.attendance-table th,
+.attendance-table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.attendance-table th{
+    background:#1e3c72;
+    color:white;
+}
+
+.login-card{
+    width:350px;
+    margin:100px auto;
+    padding:30px;
+    text-align:center;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#1e3c72;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16325c;
+}
+
+.form-card{
+    width:400px;
+    margin:80px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+.form-card h2{
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+.form-card input,
+.form-card select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-card button{
+    margin-top:10px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.admin-filter-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-filter-form select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: auto;
+}
+
+.delete-link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+
+.admin-actions {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.admin-input {
+    padding: 8px;
+    width: 250px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.add-btn {
+    background: #27ae60 !important;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    width: auto !important;
+    display: inline-block;
+}
+
+.error-msg {
+    text-align: center;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.admin-header {
+    text-align: center;
+    color: #1e3c72;
+}
+
+.filter-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-form select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.status-present {
+    color: green;
+    font-weight: bold;
+}
+
+.status-absent {
+    color: red;
+    font-weight: bold;
+}
+
+.no-records {
+    text-align: center;
+}
+
+.back-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.student-view-title {
+    text-align: center; 
+    color: #1e3c72;
+}
+
+.student-filter-card {
+    margin-bottom: 20px !important; 
+    padding: 15px !important;
+    width: 90% !important;
+}
+
+.student-filter-form {
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.student-filter-form select {
+    width: auto !important;
+}
+
+.student-filter-form button {
+    width: auto !important;
+}
+
+.no-records-cell {
+    text-align: center; 
+    padding: 20px;
+}
+
+.student-logout-btn {
+    display: block; 
+    text-align: center; 
+    background-color: #d9534f; 
+    color: white; 
+    padding: 10px; 
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.student-logout-btn:hover {
+    background-color: #c9302c;
+}
+
+.level-selector-box {
+    background: #f4f4f4; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.bold-select {
+    padding: 5px; 
+    font-weight: bold;
+}
+
+.viewing-label {
+    margin-left: 20px;
+}
+
+.week-selector-box {
+    margin-bottom: 20px;
+}
+
+.standard-select {
+    padding: 5px;
+}
+
+.full-width-btn {
+    margin-top: 20px; 
+    width: 100%; 
+    padding: 12px; 
+    background: #1e3c72; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.filter-box-container {
+    background: #f4f4f4; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.horizontal-filter-form {
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.padded-select {
+    padding: 8px;
+}
+
+.filter-btn {
+    background: #1e3c72; 
+    color: white; 
+    padding: 8px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    width: auto !important;
+}
+
+.filter-btn:hover {
+    background: #16325c;
+}
+
+.footer-actions {
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none; 
+    color: #1e3c72; 
+    font-weight: bold;
+}
